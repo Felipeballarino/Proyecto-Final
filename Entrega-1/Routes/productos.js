@@ -70,11 +70,11 @@ router.put("/:id", async (req, res) => {
 })
 
 //elimina un producto
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",  (req, res) => {
     if (req.query.admin) {
         const { id } = req.params
-        const eliminado = await fileProducto.deleteforId(id)
-        res.send(eliminado)
+        fileProducto.deleteforId(id)
+        res.send({mensaje: "Producto eliminado"})
 
     } else {
         res.send({ error: -1, descripcion: "Ruta '/', Metodo 'POST' no autorizado" })
