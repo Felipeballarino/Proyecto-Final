@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
 
 })
 //mustra todos los carritos
-router.get('/carritos',async (req, res) => {
+router.get('/',async (req, res) => {
     const carrito = await fileCarrito.getAll()
     res.send(carrito)
 })

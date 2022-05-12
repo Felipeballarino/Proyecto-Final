@@ -34,7 +34,7 @@ RUTAS PARA CARRITO
 <!-- --------------------------------------------- -->
 POST('/') ===> http://localhost:8080/api/carrito
 
-GET('/') ===> http://localhost:8080/api/carrito/carritos
+GET('/') ===> http://localhost:8080/api/carrito
 
 DELETE('/:id') ===> http://localhost:8080/api/carrito/2
 
